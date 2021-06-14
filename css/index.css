@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containe-fluid1 {
+    background: rgba(0, 0, 0, 0.5) url(/imgs/iloveimg-resized/bg1.jpg);
+    animation: bgchanger linear alternate;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.containe-fluid1 h1 {
+    margin-top: 80px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 20px 0 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+}
+
+.containe-fluid1 h4 {
+    margin-bottom: 80px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+.bg-change {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sign-up:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+}
+
+.bg-grey {
+    background-color: gray;
+    color: white;
+}
+
+.card>.width-y {
+    width: 50%;
+    margin: auto;
+}
+
+.featurette-divider {
+    background-color: aqua !important;
+    opacity: 1 !important;
+    border: 2px aqua solid !important;
+    color: aqua !important;
+    width: 100%;
+}
+
+.textsize {
+    font-size: 12px;
+    text-align: center;
+    background-color: yellow;
+}
+
+@keyframes bgchanger {
+    0% {
+        background-image: url(/imgs/iloveimg-resized/bg1.jpg);
+    }
+    50% {
+        background-image: url(/imgs/iloveimg-resized/bg2.jpg);
+    }
+    100% {
+        background-image: url(/imgs/iloveimg-resized/bg3.jpg);
+    }
+}
